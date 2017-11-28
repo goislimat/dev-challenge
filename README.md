@@ -1,23 +1,31 @@
-# dev-challenge
+# Desafio Acesso - Twitter
 
-Desafio de desenvolvimento Acesso
+Esse é um app feito para o desafio da Acesso Card de conexão com o Twitter.
 
-A equipe de marketing da Acesso precisa de uma ferramenta para acompanhar o engajamento da marca na rede social "Twitter".
+#### Tecnologias utilizadas
 
-Para atender essa necessidade o time de Desenvolvedores decididiu criar um lugar único para visualização dos posts referentes à hashtags nessa rede social.
+ * [ReactJS](https://reactjs.org/)
+ * [Redux](https://redux.js.org/)
+ * [Node](https://nodejs.org/en/)
+ * [Express](http://expressjs.com/pt-br/)
+ * [Node Twitter](https://github.com/desmondmorris/node-twitter)
 
-Sua missão, se aceitá-la, será criar uma integração com a mídia social, localizar os posts com os devidos termos (hashtags) e exibi-los na interface também criada por você.
+Essa versão roda com persistência client-side com o Redux. O backend apenas gerencia rotas e faz a busca na [API do Twitter](https://developer.twitter.com/en.html) para evitar problemas com CORS.
 
-Para agilizar a busca da equipe de marketing, como requisito não funcional, foi definido que toda hashtag pesquisada deve ser armazenada e exibida em uma lista de últimas buscas.
+### Colocando para funcionar
 
-Você tem liberdade total para a escolha de abordagem e tecnologias. Lembre-se: “Com grandes poderes vêm grandes responsabilidades”.
+Na raiz do projeto (servidor) instale as dependências do projeto com:
 
-Ao desenvolver sua interface, não se esqueça que ela será usada pela equipe de marketing. Capricho é fundamental!
+    npm install
+    
+Depois entre na pasta com as dependências do cliente e faça o mesmo:
 
-O compartilhamento da sua produção deve ser feito diretamente pelo GitHub. Para isso, faça um fork e nos envie sua versão com a devida implementação.
+  cd client-desafio-acesso
+    npm install
 
-Qualquer dúvida, você pode enviar um e-mail para dev@acessocard.com.br.
+Feito isso, basta voltar a raiz e executar os servidores. A aplicação rodará na porta 5000 para o servidor e na porta 3000 para o cliente.
 
-Desejamos um ótimo desafio!
-
-Time Acesso
+  cd ..
+    npm run dev
+    
+Se nenhum imprevisto ocorrer isso deve ser suficiente para ver o resultado na tela.

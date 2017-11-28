@@ -1,0 +1,27 @@
+html,
+body,
+#root,
+.container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.overflow-y {
+  overflow-y: scroll;
+}
+
+.fullheight {
+  height: 100%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.line2 {
+  line-height: 2;
+}
+
+.pointer {
+  cursor: pointer;
+}
