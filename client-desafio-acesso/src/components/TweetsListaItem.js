@@ -11,7 +11,7 @@ const TweetsListaItem = props => (
         <div className="col s10">
           <span className="card-title">{props.username}</span>
         </div>
-        <p>{props.text}</p>
+        <p dangerouslySetInnerHTML={{ __html: props.text }} />
       </div>
       <div className="card-action">
         <a
