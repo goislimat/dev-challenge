@@ -17,7 +17,7 @@ class BuscaForm extends React.Component {
       <div className="row">
         <form className="col s12" onSubmit={this.handleSubmit}>
           <div className="row">
-            <div className="input-field col s6">
+            <div className="input-field col s10">
               <label htmlFor="keyword">Entre com a hashtag</label>
               <input
                 type="text"
@@ -28,7 +28,7 @@ class BuscaForm extends React.Component {
                 onChange={this.handleKeywordChange}
               />
             </div>
-            <div className="input-field col s6">
+            <div className="input-field col s2">
               <button className="waves-effect waves-light orange btn">
                 Buscar
               </button>
